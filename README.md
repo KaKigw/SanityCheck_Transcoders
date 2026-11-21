@@ -9,9 +9,9 @@ On held-out WikiText-103 articles, the answer changed with training time. The fr
 | File | What to look for |
 |---|---|
 | [01_02_intervention_checks.ipynb](./01_02_intervention_checks.ipynb) | Starts with forward hooks and an identity patch. An exact replacement and a shortcut can agree on clean examples yet respond differently when one input changes. ReLU and redundant-pathway examples check the evaluator against known answers. |
-| [03_transcoder_training_pilot(1).ipynb](./03_transcoder_training_pilot%281%29.ipynb) | Trains transcoders on scalar and vector toy functions. Compares learned, frozen-encoder and frozen-decoder variants, then investigates the frozen encoder’s poor fit. On the vector toy, a least-squares decoder refit recovers the tested responses to numerical precision. |
-| [04_gpt2_transcoder_pilot(1).ipynb](./04_gpt2_transcoder_pilot%281%29.ipynb) | Caches GPT-2 block 5 activations, compares sparse replacements, selects a reference width by validation reconstruction error, and evaluates saved checkpoints across training budgets and seeds. The final cells score held-out documents and compute bootstrap intervals. |
-| [Experiment report](./Transcoder_Findings_2026-11-14.docx) | Summarizes the GPT-2 comparison, including width selection, seed-level results, the held-out protocol and uncertainty estimates. |
+| [03_transcoder_training_pilot.ipynb](./03_transcoder_training_pilot.ipynb) | Trains transcoders on scalar and vector toy functions. Compares learned, frozen-encoder and frozen-decoder variants, then investigates the frozen encoder’s poor fit. On the vector toy, a least-squares decoder refit recovers the tested responses to numerical precision. |
+| [04_gpt2_transcoder_pilot.ipynb](./04_gpt2_transcoder_pilot.ipynb) | Caches GPT-2 block 5 activations, compares sparse replacements, selects a reference width by validation reconstruction error, and evaluates saved checkpoints across training budgets and seeds. The final cells score held-out documents and compute bootstrap intervals. |
+| Experiment report | Summarizes the GPT-2 comparison, including width selection, seed-level results, the held-out protocol and uncertainty estimates. |
 
 ## How the GPT-2 comparison works
 
